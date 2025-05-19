@@ -67,36 +67,6 @@ export default function MenuSelector() {
       </div>
       <div className="mt-12 w-full max-w-4xl px-4 text-gray-700">
         <h3 className="text-xl lg:text-2xl font-bold text-gray-800 mb-4">Работно време</h3>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-          <div className="flex justify-between p-4 bg-white rounded-lg shadow-md">
-            <span className="font-semibold">Понеделник</span>
-            <span>6:00 – 22:00</span>
-          </div>
-          <div className="flex justify-between p-4 bg-white rounded-lg shadow-md">
-            <span className="font-semibold">Вторник</span>
-            <span>6:00 – 22:00</span>
-          </div>
-          <div className="flex justify-between p-4 bg-white rounded-lg shadow-md">
-            <span className="font-semibold">Сряда</span>
-            <span>6:00 – 22:00</span>
-          </div>
-          <div className="flex justify-between p-4 bg-white rounded-lg shadow-md">
-            <span className="font-semibold">Четвъртък</span>
-            <span>6:00 – 22:00</span>
-          </div>
-          <div className="flex justify-between p-4 bg-white rounded-lg shadow-md">
-            <span className="font-semibold">Петък</span>
-            <span>6:00 – 22:00</span>
-          </div>
-          <div className="flex justify-between p-4 bg-white rounded-lg shadow-md">
-            <span className="font-semibold">Събота</span>
-            <span>6:00 – 22:00</span>
-          </div>
-          <div className="flex justify-between p-4 bg-white rounded-lg shadow-md">
-            <span className="font-semibold">Неделя</span>
-            <span>Затворено</span>
-          </div>
-        </div>
       </div>
       <div className="bg-blue-600 text-white py-4 text-center mt-10 w-full px-2.5 rounded-base">
         <p className="text-sm">
