@@ -31,7 +31,9 @@ export default function MenuSelector() {
         />
       </div>
 
-      <h2 className="text-2xl lg:text-4xl font-bold mb-8 text-gray-800">Избери меню</h2>
+      <h2 className="text-2xl lg:text-4xl font-bold mb-8 text-gray-800">
+        Избери меню
+      </h2>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 lg:gap-8 w-full max-w-md px-10 lg:px-0">
         <Link
@@ -64,9 +66,6 @@ export default function MenuSelector() {
             title="Локация на бара"
           ></iframe>
         </div>
-      </div>
-      <div className="mt-12 w-full max-w-4xl px-4 text-gray-700">
-        <h3 className="text-xl lg:text-2xl font-bold text-gray-800 mb-4">Работно време</h3>
       </div>
       <div className="bg-blue-600 text-white py-4 text-center mt-10 w-full px-2.5 rounded-base">
         <p className="text-sm">
