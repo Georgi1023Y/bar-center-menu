@@ -16,20 +16,11 @@ export default function Drinks() {
     getData();
   }, []);
 
-  const groupedDrinks = data.reduce((acc, drink) => {
-    const { category } = drink;
-    if (!acc[category]) {
-      acc[category] = [];
-    }
-    acc[category].push(drink);
-    return acc;
-  }, {});
-
   const categoryIcons = {
-    "топли напитки": "☕",
-    "безалкохолни напитки": "🍹",
-    "алкохолни напитки": "🍸",
-    "ниско алкохолни напитки": "🍺",
+    "🍹 Безалкохолни напитки": "🍹",
+    "🍸 Алкохолни Напитки": "🍸",
+    "🍺 Ниско Алкохолни Напитки": "🍺",
+    "☕ Топли Напитки": "☕",
   };
 
   return (
@@ -57,30 +48,29 @@ export default function Drinks() {
 
         {data.length === 0 ? (
           <p className="flex items-center flex-row gap-5 justify-center mt-20 text-center text-gray-500 text-lg">
-            ☕ Зареждане на напитките
+            🍹 Зареждане на менюто с напитки
             <Icon icon="svg-spinners:ring-resize" width="24" height="24" />
           </p>
         ) : (
-          Object.keys(groupedDrinks).map((category) => (
+          data.map((category) => (
             <div
-              key={category}
+              key={category.category}
               className="bg-white rounded-2xl shadow-lg p-6 mb-10"
             >
               <h3 className="text-2xl font-bold mb-6 flex items-center gap-2 relative pl-4 before:absolute before:left-0 before:top-1 before:bottom-1 before:w-1 before:bg-blue-500 before:rounded">
-                <span>{categoryIcons[category.toLowerCase()] || "🥤"}</span>
-                {category.charAt(0).toUpperCase() + category.slice(1)}
+                {category.category}
               </h3>
 
               <div className="divide-y divide-gray-200">
-                {groupedDrinks[category].map((drink) => (
+                {category.items.map((item) => (
                   <div
-                    key={drink.id}
+                    key={item.name}
                     className="flex justify-between py-2 menu-item hover:bg-gray-50 transition-colors"
                   >
-                    <div className="text-gray-700">{drink.name}</div>
+                    <div className="text-gray-700">{item.name}</div>
                     <div className="text-right">
-                      <p className="text-gray-500 text-sm">{drink.unit}</p>
-                      <p className="font-bold">{drink.price.toFixed(2)} лв</p>
+                      <p className="text-gray-500 text-sm">{item.weight}</p>
+                      <p className="font-bold">{item.price.toFixed(2)} лв</p>
                     </div>
                   </div>
                 ))}
