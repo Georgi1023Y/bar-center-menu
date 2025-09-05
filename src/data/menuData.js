@@ -6,7 +6,7 @@ export const drinksData = [
       { name: "Парти безалкохолно", weight: "330мл", price: 3.0 },
       { name: "Кинли сода", weight: "1 брой", price: 3.0 },
       { name: "Студен чай", weight: "1 брой", price: 4.0 },
-      { name: 'Натурален сок "Капи"', weight: "1 брой", price: 2.5 },
+      { name: 'Натурален сок "Капи"', weight: "1 брой", price: 4.0 },
       { name: "Кока кола и др.", weight: "1 брой", price: 4.0 },
     ],
   },
